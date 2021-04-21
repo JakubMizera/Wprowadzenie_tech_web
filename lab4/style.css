@@ -9,6 +9,7 @@
   color: white;
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 .top {
@@ -92,6 +93,10 @@
 }
 
 /* MAILS */
+
+main {
+  width: 100vw;
+}
 
 .mails {
   display: flex;
