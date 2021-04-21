@@ -243,6 +243,10 @@ main {
   .mails {
     max-height: 290px;
     overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  .mail_menu {
+    border-top: 1px solid rgb(197, 195, 195);
   }
 
   main {
@@ -268,7 +272,8 @@ main {
     flex-direction: row;
   }
   .mails {
-    min-width: 400px;
+    min-width: 300px;
+    max-width: 400px;
   }
   .selected_mail {
     border-left: 1px solid rgb(197, 195, 195);
