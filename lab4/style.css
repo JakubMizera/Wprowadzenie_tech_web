@@ -254,6 +254,7 @@ main {
   }
   .menu {
     height: 100vh;
+    max-width: 200px;
   }
   #menuButton {
     display: none;
