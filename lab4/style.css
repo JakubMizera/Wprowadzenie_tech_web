@@ -150,69 +150,69 @@
 /* MAILS MAIN */
 
 .selected_mail {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .mail_menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    padding: 0 16px;
-    border-bottom: 1px solid rgb(197, 195, 195);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 16px;
+  border-bottom: 1px solid rgb(197, 195, 195);
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
 }
 
 .title h2 {
-    font-size: 32px;
-    color: black;
+  font-size: 32px;
+  color: black;
 }
 
 .title p {
-    font-size: 16px;
-    color: black;
+  font-size: 16px;
+  color: black;
 }
 
 .title a {
-    color: #1b98f8;
-    text-decoration: none;
+  color: #1b98f8;
+  text-decoration: none;
 }
 
 .title span {
-    color: #999;
+  color: #999;
 }
 
 .function_buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
 .function_buttons button {
-    font-size: 16px;
-    color: #666;
-    padding: 6px 26px;
-    border-radius: 40px;
-    border: 1px solid rgb(197, 195, 195);
-    outline: none;
-    background-color: white;
+  font-size: 16px;
+  color: #666;
+  padding: 6px 26px;
+  border-radius: 40px;
+  border: 1px solid rgb(197, 195, 195);
+  outline: none;
+  background-color: white;
 }
 
 .function_buttons button:hover {
-    background-image: linear-gradient(white, #999);
+  background-image: linear-gradient(white, #999);
 }
 
 .text {
-    padding: 16px;
+  padding: 16px;
 }
 
 .text p {
-    font-size: 16px;
-    color: #666;
+  font-size: 16px;
+  color: #666;
 }
