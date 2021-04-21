@@ -1,89 +1,148 @@
 :root {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
+/* MENU */
+
 .menu {
-    background-color: #252a3a;
-    color: white;
-    display: flex;
-    flex-direction: column;
+  background-color: #252a3a;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .top {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 #menuButton {
-    margin-left: auto;
-    padding: 10px;
-    color: #1B98F8;
+  margin-left: auto;
+  padding: 10px;
+  color: #1b98f8;
+  cursor: pointer;
 }
 
 button {
-    background-color: #1B98F8;
-    color: white;
-    border-radius: 20px;
-    padding: 8px 16px;
-    margin: 16px 0;
-    outline: none;
-    width: 100px;
-    border: none;
+  background-color: #1b98f8;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin: 16px 0;
+  outline: none;
+  width: 100px;
+  border: none;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .options {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
 }
 
 .options span {
-    padding: 5px;
+  padding: 5px;
 }
 
 .labels {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
 }
 
 .labels h2 {
-    color:#4b60a7;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 5px;
-    font-weight: 600;
+  color: #4b60a7;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 5px;
+  font-weight: 600;
 }
 
 .box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .box span {
-    padding: 5px;
+  padding: 5px;
 }
 
 .rectangle {
-    width: 13px;
-    height: 13px;
-    border-radius: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
 }
 
 .orange {
-    background-color: rgb(228, 179, 89);
+  background-color: rgb(228, 179, 89);
 }
 .teal {
-    background-color: rgb(37, 165, 165);
+  background-color: rgb(37, 165, 165);
 }
 .green {
-    background-color: rgb(81, 150, 81);
+  background-color: rgb(81, 150, 81);
+}
+
+/* MAILS */
+
+.mails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 14px 16px;
+  width: 100%;
+  border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+.mail:nth-child(2) {
+  border-left: 6px solid #1b98f8;
+}
+
+.mail:nth-child(3) {
+  border-left: 6px solid #1b98f8;
+}
+
+.mail:hover {
+  background-color: #eee;
+}
+
+.mail img {
+  width: 42px;
+  height: 42px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.mail span {
+  font-size: 13px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.mail h3 {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+.mail p {
+  font-size: 13px;
+  color: black;
+  margin: 7px 0;
 }
