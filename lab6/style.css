@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(49, 48, 90);
+    background-color: rgb(204, 116, 84);
 }
 
 *{
@@ -7,18 +7,21 @@ body {
 }
 
 nav {
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: rgb(204, 116, 84);
+    transform: translateX(0px);
+    transition: all 2s;
+    position: absolute;
 }
 
 .hide {
     position: absolute;
-    left: -200px;
+    transform: translateX(-200px);
+    transition: all 2s;
 }
 
 h2 {
