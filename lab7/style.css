@@ -1,85 +1,91 @@
 :root {
-    font-family: 'Roboto', sans-serif, 'Aleo';
+  font-family: "Roboto", sans-serif, "Aleo";
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* header and background */
+
 .background_container {
-    background-image: url(images/lightbulbman.jpg);
-    display: flex;
-    justify-content: center;
+  background-image: url(images/lightbulbman.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1140px;
-    height: 158px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1140px;
+  height: 158px;
+  border-bottom: 1px solid #cad2d7;
 }
 
 .logo {
-    text-transform: capitalize;
-    text-decoration: none;
-    color: #000;
-    font-size: 3.5rem;
-    font-weight: 700;
-    position: relative;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  position: relative;
 }
 
 .logo:hover {
-   opacity: 0.6;
-   color: #000;
+  opacity: 0.6;
+  color: #000;
 }
 
 .logo::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color:#ffc000;
-    position: absolute;
-    bottom: 10px;
-    right: -7px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffc000;
+  position: absolute;
+  bottom: 10px;
+  right: -7px;
 }
 
 ul {
-    display: flex;
+  display: flex;
 }
 
 li {
-    padding: 10px 6px;
-    border-radius: 4px;
-    margin-right: 5px;
-    transition: all ease-in-out 0.3s;
+  padding: 10px 6px;
+  border-radius: 4px;
+  margin-right: 5px;
+  transition: all ease-in-out 0.3s;
 }
 
 li:hover {
-    background-color: #646d72;
-    transition: all ease-in-out 0.3s;
+  background-color: #646d72;
+  transition: all ease-in-out 0.3s;
 }
 
 li a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    padding: 6px 24px;
-    transition: all ease-in-out 0.3s;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 6px 24px;
+  transition: all ease-in-out 0.3s;
 }
 
 a:hover {
-    color: #fff;
-    transition: all ease-in-out 0.3s;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
 }
 
 .active {
-    background-color: #ffc000;
-    color: #fff;
+  background-color: #ffc000;
+  color: #fff;
 }
 
 .active_color {
-    color: #fff;
+  color: #fff;
 }
