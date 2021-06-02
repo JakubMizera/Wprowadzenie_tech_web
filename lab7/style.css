@@ -2,6 +2,10 @@
   font-family: "Roboto", sans-serif, "Aleo";
 }
 
+body {
+  
+}
+
 * {
   box-sizing: border-box;
 }
@@ -181,4 +185,53 @@ h2::after {
 
 #emailMe:hover {
   color: #ffc000;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 150px;
+  width: 80%;
+  border-top: 1px solid #d6d6d6;
+  margin: 0 auto;
+}
+
+.footerName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerLogo {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color:#969696
+}
+
+#footerLogo:hover {
+  color: #b1b1b1;
+}
+
+span {
+  color:#969696;
+  font-size: 0.9rem;
+}
+
+.footerSocials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_link {
+  color:#969696;
+  outline: none;
+  padding: 5px;
+}
+
+a > img {
+  width: 32px;
+  height: 32px;
 }
