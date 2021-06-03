@@ -2,10 +2,6 @@
   font-family: "Roboto", sans-serif, "Aleo";
 }
 
-body {
-  
-}
-
 * {
   box-sizing: border-box;
 }
@@ -18,7 +14,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
-  height: 100vh;
+  height: 110vh;
 }
 
 header {
@@ -190,6 +186,8 @@ h2::after {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
   height: 150px;
   width: 80%;
@@ -207,7 +205,7 @@ footer {
   font-size: 1rem;
   text-decoration: none;
   font-weight: 600;
-  color:#969696
+  color: #969696;
 }
 
 #footerLogo:hover {
@@ -215,7 +213,7 @@ footer {
 }
 
 span {
-  color:#969696;
+  color: #969696;
   font-size: 0.9rem;
 }
 
@@ -226,7 +224,7 @@ span {
 }
 
 .social_link {
-  color:#969696;
+  color: #969696;
   outline: none;
   padding: 5px;
 }
@@ -234,4 +232,84 @@ span {
 a > img {
   width: 32px;
   height: 32px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin: 3px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .background_container {
+    background-position: center;
+  }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* HAMBURGER MENU STYLE */
+
+  header {
+    position: relative;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 101%;
+    right: 0%;
+    width: 100%;
+    background-color: rgba(165, 173, 176, 0.8);
+  }
+  
+  .open > li {
+    margin: 0 auto;
+  }
+
+  /* HAMBURGER MENU STYLE */
+
+  .main_container {
+    padding: 50px 5%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .main_container {
+    grid-template-columns: 1fr;
+  }
+
+  .index_main {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+  }
+
+  .background_container {
+    background-position: -150vw;
+  }
 }
