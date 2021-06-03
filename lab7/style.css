@@ -15,6 +15,7 @@
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
   height: 110vh;
+  min-height: 1000px;
 }
 
 header {
@@ -187,7 +188,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap:wrap-reverse;
   padding: 20px;
   height: 150px;
   width: 80%;
@@ -311,5 +312,9 @@ a > img {
 
   .background_container {
     background-position: -150vw;
+  }
+  
+  footer {
+    justify-content: center;
   }
 }
