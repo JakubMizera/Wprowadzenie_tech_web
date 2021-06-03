@@ -61,12 +61,12 @@ li {
   padding: 10px 6px;
   border-radius: 4px;
   margin-right: 5px;
-  transition: all ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
 }
 
 li:hover {
   background-color: #646d72;
-  transition: all ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
 }
 
 li a {
@@ -75,12 +75,12 @@ li a {
   color: black;
   font-weight: 500;
   padding: 6px 24px;
-  transition: all ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
 }
 
 a:hover {
   color: #fff;
-  transition: all ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
 }
 
 .active {
