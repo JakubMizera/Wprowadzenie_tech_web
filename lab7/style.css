@@ -98,7 +98,7 @@ a:hover {
   grid-row-start: 5;
 }
 
-h1 {
+.mainH1 {
   font-size: 6rem;
   color: white;
   font-weight: 600;
@@ -106,21 +106,21 @@ h1 {
   padding: 20px 0;
 }
 
-h3 {
+.mainH3 {
   font-style: italic;
   color: #e2e2e2;
   font-size: 2rem;
   padding: 20px 0;
 }
 
-h5 {
+.mainH5 {
   color: white;
   font-size: 1.4rem;
   font-weight: 600;
   padding: 10px 0;
 }
 
-p {
+.mainP {
   color: white;
   font-size: 1.1rem;
   line-height: 1.3;
@@ -156,14 +156,14 @@ p {
   line-height: 1.8;
 }
 
-h2 {
+.mainH2 {
   font-size: 2rem;
   font-weight: 600;
   padding: 20px 0;
   position: relative;
 }
 
-h2::after {
+.mainH2::after {
   content: "";
   display: block;
   width: 8px;
@@ -188,9 +188,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap:wrap-reverse;
+  flex-wrap: wrap-reverse;
   padding: 20px;
-  height: 150px;
   width: 80%;
   border-top: 1px solid #d6d6d6;
   margin: 0 auto;
@@ -263,7 +262,7 @@ a > img {
   header {
     position: relative;
   }
-  
+
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -282,12 +281,12 @@ a > img {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 101%;
+    top: 104%;
     right: 0%;
     width: 100%;
     background-color: rgba(165, 173, 176, 0.8);
   }
-  
+
   .open > li {
     margin: 0 auto;
   }
@@ -313,8 +312,49 @@ a > img {
   .background_container {
     background-position: -150vw;
   }
-  
+
   footer {
     justify-content: center;
   }
+}
+
+/* ABOUT STYLES */
+
+.wrapper {
+  background-color: rgb(243, 244, 245);
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+}
+
+main {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_about {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.fakesmile {
+  max-width: 100%;
+  max-height: 100%;
+  border: 6px solid white;
+}
+
+.about_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.aboutH2 {
+  font-size: 4rem;
+  color: #2d3438;
 }
