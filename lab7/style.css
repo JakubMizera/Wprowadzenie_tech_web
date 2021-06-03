@@ -356,7 +356,6 @@ a > img {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 30px 0;
-  overflow: scroll;
 }
 
 .aboutH2 {
