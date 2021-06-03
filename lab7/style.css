@@ -325,15 +325,17 @@ a > img {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
+  
 }
 
-main {
+.aboutMain {
   grid-column-start: 2;
   grid-column-end: 10;
   grid-row-start: 3;
-  grid-row-end: 10;
+  grid-row-end: 9;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .footer_about {
@@ -352,9 +354,37 @@ main {
 .about_wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 30px 0;
 }
 
 .aboutH2 {
   font-size: 4rem;
   color: #2d3438;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  padding: 40px 0;
+}
+
+.aboutH2::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffc000;
+  position: absolute;
+  top: 87px;
+  left: 284px;
+}
+
+.aboutPitalic {
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 20px 0;
+}
+
+.aboutP {
+  color: #656a6f;
+  padding: 20px 0;
 }
