@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 158px;
+  /* height: 158px; */
   border-bottom: 1px solid #cad2d7;
 }
 
@@ -325,7 +325,7 @@ a > img {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
-  min-height: 170vh;
+  min-height: 100vh;
 }
 
 .aboutMain {
@@ -409,3 +409,132 @@ a > img {
   }
 }
 
+/* CONTACT STYLES */
+
+.contactMain {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+}
+
+.contactBox {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 10;
+  padding-right: 40px;
+}
+
+.contactRightPanel {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 8;
+  padding-left: 50px;
+  margin-top: 50px;
+  border-left: 1px solid #cad2d7;
+  display: flex;
+  flex-direction: column;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input[type=text], input[type=email] {
+  width: 70%;
+  height: 40px;
+  padding: 20px;
+  outline: none;
+  border: 1px solid #dde1e5;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #969ca5;
+  margin-top: 18px;
+}
+
+#about {
+  width: 90%;
+  height: 150px;
+}
+
+.contactH2::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffc000;
+  position: absolute;
+  top: 87px;
+  left: 335px;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+  width: 150px;
+  height: 46px;
+  background-color: #ffc000;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3438;
+  position: relative;
+  padding: 40px 0;
+}
+
+.sidebar::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffc000;
+  position: absolute;
+  top: 60px;
+  left: 143px;
+}
+
+.sidebarP {
+  color: #656a6f;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+#contactLink {
+  color: #3c4a52;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contactSidebarP {
+  padding: 20px 0;
+}
+
+.sidebarText {
+  padding: 50px 0;
+  border-top: 1px dotted #cad2d7;
+}
+
+.contactNetworks {
+  padding-bottom: 30px;
+}
