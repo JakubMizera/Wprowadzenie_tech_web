@@ -14,6 +14,7 @@
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
+  grid-auto-rows: min-content;
   height: 110vh;
   min-height: 1000px;
 }
@@ -24,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 158px; */
+  height: 158px;
   border-bottom: 1px solid #cad2d7;
 }
 
@@ -215,6 +216,7 @@ footer {
 span {
   color: #969696;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .footerSocials {
@@ -316,7 +318,6 @@ a > img {
 
   footer {
     justify-content: center;
-    padding-top: 100px;
     min-height: 100px;
   }
 }
@@ -327,8 +328,9 @@ a > img {
   background-color: rgb(243, 244, 245);
   display: grid;
   grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(10, 10%);
-  min-height: 100vh;
+  /* grid-template-rows: repeat(10, 10%); */
+  /* min-height: 100vh; */
+  grid-auto-rows: min-content;
 }
 
 .aboutMain {
@@ -410,10 +412,6 @@ a > img {
     grid-column-end: 11;
     padding: 30px;
   }
-
-  .footer_about {
-    padding-top: 150px;
-  }
 }
 
 /* CONTACT STYLES */
@@ -424,9 +422,9 @@ a > img {
   grid-row-start: 2;
   grid-row-end: 10;
   display: grid;
+  padding-bottom: 20px;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
-  min-height: 100vh;
 }
 
 .contactBox {
@@ -558,15 +556,13 @@ input[type="email"]:focus {
 }
 
 @media only screen and (max-width: 992px) {
-  .contactMain {
-    min-height: 130vh;
-  }
+  
 }
 
 @media only screen and (max-width: 780px) {
   .contactMain {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: min-content;
   }
 
   .contactBox {
@@ -584,7 +580,6 @@ input[type="email"]:focus {
     grid-row-end: 2;
     border-left: none;
     padding: 0;
-    margin-top: 15%;
     border-top: 1px solid #cad2d7;
   }
 }
@@ -619,8 +614,7 @@ input[type="email"]:focus {
   grid-row-end: 10;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  min-height: 2500px;
+  grid-auto-rows: min-content;
 }
 
 .blogBox {
@@ -629,6 +623,10 @@ input[type="email"]:focus {
   grid-template-rows: repeat(1, 1fr);
   padding: 50px 0;
   border-bottom: 1px solid #cad2d7;
+}
+
+.blogBox:last-child {
+  border-bottom: none;
 }
 
 .postBox {
@@ -676,7 +674,7 @@ input[type="email"]:focus {
 @media only screen and (max-width: 992px) {
   .blogBox {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: min-content;
   }
 
   .postBox {
