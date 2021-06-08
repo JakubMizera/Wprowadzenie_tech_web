@@ -743,6 +743,15 @@ input[type="email"]:focus {
   border: 6px solid #fff;
 }
 
+a .photo {
+  transition: opacity 0.5s ease-in-out;
+}
+
+a .photo:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+
 .twoPhotos {
   display: flex;
   justify-content: center;
@@ -753,4 +762,21 @@ input[type="email"]:focus {
 .styleThree {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+@media only screen and (max-width: 900px) {
+    .galleryBox {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: min-content;
+    }
+
+    .galleryPost {
+      grid-column: 1/1;
+      padding-right: 0;
+    }
+
+    .galleryPhotos {
+      grid-column: 1/1;
+      padding: 20px 0;
+    }
 }
