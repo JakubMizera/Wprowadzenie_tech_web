@@ -587,3 +587,17 @@ input[type="email"]:focus {
     left: 94px;
   }
 }
+
+.contactLi a {
+  color: #656a6f;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contactLi a:hover {
+  color: #ffc000;
+}
+
+.contactLi:hover {
+  background-color: rgb(243, 244, 245);
+}
