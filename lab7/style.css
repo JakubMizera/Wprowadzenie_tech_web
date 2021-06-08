@@ -647,7 +647,6 @@ input[type="email"]:focus {
   font-size: 2.2rem;
   font-weight: 600;
   color: #2d3438;
-  
 }
 
 .blogH2::after {
@@ -664,13 +663,30 @@ input[type="email"]:focus {
   font-weight: 600;
 }
 
-.blogLink > a{
+.blogLink > a {
   text-decoration: none;
   color: #3c4a52;
   font-weight: 600;
-
 }
 
 .blogLink > a:hover {
   color: #ffc000;
+}
+
+@media only screen and (max-width: 992px) {
+  .blogBox {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .postBox {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .blogPicture {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    margin-top: 20px;
+  }
 }
